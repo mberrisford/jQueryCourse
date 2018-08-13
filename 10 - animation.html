@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <!-- <script src="main.js"></script> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $("document").ready(function () {
+
+            $("#grow").click(function () {
+                $("#textBox").animate({ width: "500px" }, 1000);
+            });
+
+            $("#move").click(function () {
+                $("#textBox").animate({ marginLeft: "200px" }, 1000);
+            });
+
+            $("#bigger").click(function () {
+                $("#textBox").animate({ fontSize: "40px" }, 3000);
+            });
+
+            $("#many").click(function () {
+                $("#textBox").animate({ fontSize: "40px", marginLeft: "400px", width: "600px", height: "500px" }, 2000);
+            });
+
+        });
+    </script>
+
+    <style>
+        #textBox {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            position: absolute;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href="#" id="grow">Grow</a> |
+    <a href="#" id="move">Move</a> |
+    <a href="#" id="bigger">Bigger</a> |
+    <a href="#" id="many">Many Things</a>
+    <div id="textBox">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, fugit, quasi consequatur optio quibusdam omnis
+            maiores recusandae suscipit vel dolore blanditiis veritatis sequi velit ipsam numquam cupiditate excepturi porro
+            in.
+        </p>
+
+    </div>
+</body>
+
+</html>
